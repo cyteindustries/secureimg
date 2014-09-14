@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>secureimg || encrypted image hosting</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Encrypted and secure image hosting!">
+    <meta name="keywords" content="image,hosting,secure,encrypted,imgur,hashed,hash">
+    <meta name="author" content="Cyte Industries">
+
+    <!-- (c) cyte industries -->
+    <!-- http://github.com/cyteindustries/secureimg -->
+
+    <!-- be warned that until it is reviewed by a -->
+    <!-- sassy gent that shall remain nameless, it will -->
+    <!-- look trashy, but this does not remove from -->
+    <!-- its functionality. -->
+
+    <!-- license available in repository above -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='script.aes.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.show.js') }}" encrypted="{{ upload.img_string }}"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.show.css') }}">
+</head>
+<body>
+    <div id="logo-container">
+        <div id="logo">
+            <h1>secureimg.us</h1>
+            <h2>encrypted image hosting</h2>
+        </div>
+    </div>
+
+    <div id="main">
+    </div>
+
+    <div id="footer">
+        <p id="copyright">copyright &copy; cyte industries</p>
+        <p id="copyright">encrypted <span class="count">{{ count }}</span> images</p>
+        <p id="links"><a href="{{ url_for('index') }}">home</a> <b>|</b>
+                      <a href="#">about</a> <b>|</b>
+                      <a href="{{ url_for('privacypolicy') }}">privacy policy</a> <b>|</b>
+                      <a href="#">source code</a>
+        </p>
+    </div>
+</body>
+</html>

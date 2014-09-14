@@ -1,0 +1,17 @@
+/*
+    (c) cyte industries
+    http://github.com/cyteindustries/secureimg
+
+    be warned that until it is reviewed by a 
+    sassy gent that shall remain nameless, it will 
+    look trashy, but this does not remove from 
+    its functionality.
+
+    license available in repository above
+*/
+
+img {
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}

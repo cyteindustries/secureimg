@@ -1,0 +1,176 @@
+/*
+    (c) cyte industries
+    http://github.com/cyteindustries/secureimg
+
+    be warned that until it is reviewed by a 
+    sassy gent that shall remain nameless, it will 
+    look trashy, but this does not remove from 
+    its functionality.
+
+    license available in repository above
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800);
+
+* {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+}
+
+body {
+    font-family: 'Open Sans';
+    background-color: #E5E5E5;
+}
+
+/* annoying vertical align stuff */
+#logo-container {
+    display: table;
+    width: 100%;
+}
+
+#logo {
+    display: table-cell;
+    vertical-align: middle;
+
+    height: 150px;
+    background-color: #05B8CC;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+#logo>h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+#logo>h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+#main {
+    text-align: center;
+    padding: 20px;
+    background: rgb(237, 237, 236);
+}
+
+#main p {
+    font-weight: bold;
+}
+
+#main>#holder {
+    border: 10px dashed #ccc;
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+#main>#holder.hover {
+    border: 10px dashed #333;
+}
+
+#main>#holder>.info {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  cursor: default;
+  color: #ccc;
+}
+
+#main>#loading {
+    display: none;
+    margin: 0 auto;
+}
+#main>#loading p {
+    display: inline;
+    padding-left: 5px;
+    color: #5C5C5C;
+}
+
+#main>#done {
+    width: 400px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#main>#done>.url-container {
+    width: 400px;
+    display: none;
+}
+
+#main>#done p {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 0;
+    color: #5C5C5C;
+}
+
+#main>#done input {
+    font-size: 15px;
+    padding: 20px;
+    border: none;
+    width: 400px;
+}
+
+#footer {
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+#footer>#copyright {
+    font-weight: bold;
+}
+
+#footer>#links a {
+    text-decoration: none;
+    color: #419099;
+}
+
+#footer>#links a:hover {
+    border-bottom: 1px solid #0000EE;
+}
+
+
+
+
+/* alert boxes, not created by me :( */
+
+.alert-box-container {
+    float: right;
+    max-width: 300px;
+}
+
+.alert-box {
+    display:none;
+    color:#555;
+    border-radius:5px;
+    font-size:12px;
+    padding:10px 10px 10px 10px;
+    margin:10px;
+}
+
+.alert-box span {
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.error {
+    background:#ffecec;
+    border:1px solid #f5aca6;
+}
+.success {
+    background:#e9ffd9;
+    border:1px solid #a6ca8a;
+}
