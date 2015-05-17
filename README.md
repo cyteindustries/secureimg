@@ -1,5 +1,4 @@
 secureimg
 =========
 
-(no longer supported)
-the technology that used to be behind secureimg.us
+The technology that used to be behind secureimg.us. (no longer supported)
